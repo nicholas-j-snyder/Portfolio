@@ -1092,7 +1092,8 @@ memory usage: 564.1 KB
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#        'depth': [4, 6, 10],</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#params = {'learning_rate': [0.03, 0.05, 0.1],</span>
+<span class="c1">#        'depth': [4, 6, 10],</span>
 <span class="c1">#        'l2_leaf_reg': [1, 3, 5, 7, 9]}</span>
 <span class="c1">#</span>
 <span class="c1">#model_2.grid_search(params, </span>
@@ -1101,9 +1102,7 @@ memory usage: 564.1 KB
 <span class="c1">#                  refit=True,</span>
 <span class="c1">#                  partition_random_seed= 12345)</span>
 
-<span class="c1"># Grid Search offered worse results over default settings</span>
-<span class="c1"># the default config trains in less than 1/100th of the time</span>
-<span class="c1"># compared to running the grid search method</span>
+
 
 <span class="n">model_2</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">features_train</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
 <span class="n">pred_2</span> <span class="o">=</span> <span class="n">model_2</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">features_test</span><span class="p">)</span>
@@ -1112,7 +1111,10 @@ memory usage: 564.1 KB
     </div>
 </div>
 </div>
-
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
+</p>
 <div class="output_wrapper">
 <div class="output">
 
@@ -2126,9 +2128,21 @@ memory usage: 564.1 KB
 </div>
 </div>
 
+    </details>
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Grid Search offered worse results over default settings</li>
+<li>The default config trains in less than 1/100th of the time compared to running the grid search method</li>
+</ul>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -2362,20 +2376,11 @@ memory usage: 564.1 KB
 <li>The dummy model (sanity test) scored just over an 8 MAE</li>
 <li>Linear Regression and Ridge performed adequately with MAE scores just under 6</li>
 <li>We tried CatBoost with some parameter tuning and the basic format - the base model performed better<br>
-## Results:</li>
+## Results:  </li>
 <li>Catboost overall was our best model. The average error rate (MAE) was down to 5.22 with CatBoost</li>
 <li>Model training time is usally a concern with CatBoost but since we are using the base model CatBoost runs quickly</li>
 </ul>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="alert alert-success">
-    <b>Anton's comments:</b> Plan looks great - not wordy, very well structured. I have nothing to recommend on it actually - just don't forget to use it in other projects too! Good luck :)
-</div>
 </div>
 </div>
 </div>
