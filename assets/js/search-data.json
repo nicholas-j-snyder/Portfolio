@@ -38,6 +38,17 @@
   
 
   
+      ,"page1": {
+          "title": "About Me",
+          "content": "Name: Nicholas J Snyder Location: Central New York .",
+          "url": "https://nicholas-j-snyder.github.io/portfolio/about/",
+          "relUrl": "/about/",
+          "date": ""
+      }
+      
+  
+
+  
 
   
   
@@ -59,7 +70,7 @@
   
 
   
-      ,"page9": {
+      ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://nicholas-j-snyder.github.io/portfolio/robots.txt",
