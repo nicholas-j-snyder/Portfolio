@@ -2036,7 +2036,10 @@ ROC AUC    0.98  0.95
     </div>
 </div>
 </div>
-
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
+</p>
 <div class="output_wrapper">
 <div class="output">
 
@@ -2070,6 +2073,7 @@ Best score reached: 0.8622412032998058 with params: {'colsample_bytree': 0.75379
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -2294,27 +2298,8 @@ ROC AUC     1.0  0.95
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># train_features_9 = BERT_text_to_embeddings(df_reviews_train['review_norm'])</span>
-<span class="n">train_features_9</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'C:/Users/The Ogre/datasets/train_features_9.csv'</span><span class="p">)</span>
-<span class="c1"># train_features_9 = np.load('C:/Users/The Ogre/datasets/train_features_9.npy')</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_features_9</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'C:/Users/The Ogre/datasets/test_features_9.csv'</span><span class="p">)</span>
-<span class="c1"># test_features_9 = np.load('C:/Users/The Ogre/datasets/test_features_9.npy')</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_features_9</span> <span class="o">=</span> <span class="n">BERT_text_to_embeddings</span><span class="p">(</span><span class="n">df_reviews_train</span><span class="p">[</span><span class="s1">'review_norm'</span><span class="p">])</span>
+<span class="n">test_features_9</span> <span class="o">=</span> <span class="n">BERT_text_to_embeddings</span><span class="p">(</span><span class="n">df_reviews_test</span><span class="p">[</span><span class="s1">'review_norm'</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -2340,7 +2325,10 @@ ROC AUC     1.0  0.95
     </div>
 </div>
 </div>
-
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
+</p>
 <div class="output_wrapper">
 <div class="output">
 
@@ -2715,6 +2703,7 @@ ROC AUC     1.0  0.95
 </div>
 </div>
 
+    </details>
 </div>
     
 
